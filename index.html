@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Catch the Train!</title>
+</head>
+
+<body>
+
+
+  <div class="jumbotron">
+    <h2>Train Schedule!!</h2>
+  </div>
+
+
+
+
+
+
+
+  <div class="card card-default">
+    <div class="card-heading">
+      <div class="card-body">
+
+        <div class="card text-white bg-dark mb-3">
+
+          <div class="card-header">
+            <h3 class="card-title">Current Train Schedule</h3>
+
+          </div>
+        </div>
+        <div class="card border-dark mb-3">
+
+
+          <table class="table" id='train-table'>
+         
+              <tr></tr>
+                <th scope="col">Train</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Next Arrival</th>
+                
+                <th scope="col">Minutes Away</th>
+              </tr>
+          
+            
+              <tr>
+              
+              </tr>
+          
+
+            
+            <tbody>
+              
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+
+
+      <div class="card card-default">
+        <div class="card-heading">
+          <div class="card-body">
+
+              <div class="card text-white bg-dark mb-3" >
+          
+
+                  <div class="card-header">
+                 
+                <h3 class="card-title">Add Train</h3>
+              
+                  
+          
+                  </div>
+                </div>
+
+
+            <form role="form">
+         
+              <div class="form-group row">
+                <label for="name-input"> <h4>Train Name </h4></label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="destination-input"> <h4>Destination</h4></label>
+                <input class="form-control" id="destination-input" type="destination">
+              </div>
+              <div class="form-group row">
+                <label for="time-input"> <h4>Arrival Time (HH:MM - Military Time):</h4></label>
+                <input class="form-control" id="time-input" type="time">
+              </div>
+              <div class="form-group row">
+                <label for="frequency-input"> <h4>Frequency (Min.)</h4></label>
+                <input class="form-control" id="frequency-input" type="integer">
+            </div>
+            <button class="btn btn-default" id="submitInfo" type="submit">Submit</button>
+   
+          </form>
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+    <script src="fireBase.js"></script>
+
+</body>
+
+</html>
+
+
+
+<!-- <th scope="col">Frequency</th> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+  $('#run-search').on(click, function(){
+    // Create a variable to reference the database.
+    var database = firebase.database();
+    // Initial Values
+
+      // Code for handling the push
+      database.ref().push({
+        name: name,
+        destination: destination,
+        time: time,
+        frequency: frequency,
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
+      });
+    });
+    // Firebase watcher .on("child_added"
+    database.ref().on("child_added", function(snapshot) {
+      // storing the snapshot.val() in a variable for convenience
+      var sv = snapshot.val();
+      // Console.loging the last user's data
+      console.log(sv.name);
+      console.log(sv.destination);
+      console.log(sv.time);
+      console.log(sv.frequency);
+      // Change the HTML to reflect
+      $("#name-display").text(sv.name);
+      $("#destination-input").text(sv.role);
+      $("#time-input").text(sv.date);
+      $("#frequency-input").text(sv.monthlyRate);
+      // Handle the errors
+    }, function(errorObject) {
+      console.log("Errors handled: " + errorObject.code);
+    }); -->

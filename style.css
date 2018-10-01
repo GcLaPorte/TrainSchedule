@@ -1,0 +1,40 @@
+h2 { 
+    text-align: center;
+
+    /* font-family: 'Inconsolata', monospace; */
+
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+
+h3 { 
+    text-align: center;
+
+    /* font-family: 'Inconsolata', monospace; */
+
+    font-weight: bold;
+}
+
+
+formTitle{
+    font: bold;
+}
+
+
+/*body{
+    background-image: url("https://www.music-bazaar.com/album-images/vol11/533/533435/2367642-big/C-Mon-N-Ride-It-The-Train-cover.jpg");
+    background-image: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 200px;
+}*/
+/* 
+card-title{
+
+} */
